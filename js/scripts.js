@@ -2,7 +2,6 @@ function hideResults(){
   document.getElementById("ruby").setAttribute("class", "hidden");
   document.getElementById("see-sharp").setAttribute("class", "hidden");
   document.getElementById("python").setAttribute("class", "hidden");
-  document.getElementById("java-script").setAttribute("class", "hidden");
 }
 
 function submitQuestions(e) {
@@ -14,7 +13,13 @@ function submitQuestions(e) {
   const input4 = document.querySelector("input[name='project-size']:checked").value;
   const input5 = document.querySelector("input[name='']:checked").value;
 
-
+  if (input1 === '1' && (input2 === '' || input3 === '' || input4 === '' || input5 === '')){
+    document.getElementById("ruby").removeAttribute("class");
+  } else if (input1 === '' && input2 === ''){
+    document.getElementById("see-sharp").removeAttribute("class");
+  } else if ((input1 ==='' && (input2 === '' || input2 === '')) || (input1 === '' && (input2 === '' || input2 ==='' || input2 === ''))){
+    document.getElementById("python").removeAttribute("class");
+  }
 }
 
 window.addEventListener("load",function( {
