@@ -38,7 +38,7 @@ if (ruby >= csharp && ruby >= python){
 
 }
 function quizResult(o){
-  document.getElementById("output").removeAttribute("class");
+  document.getElementById("results").removeAttribute("class");
   document.getElementById(o).removeAttribute("class");
 }
 
@@ -51,12 +51,12 @@ window.addEventListener("load", function() {
 function submitLanguage(event) {
   event.preventDefault();
   const difficulty = parseInt(document.getElementById("difficulty").value);
-  const creativity = parseInt(document.getElementById("creativity-level").value);
-  const company = parseInt(document.getElementById("company-type").value);
-  const project = parseInt(document.getElementById("project-size").value);
-  const dream = parseInt(document.getElementById("dream-work").value);
+  const creativity = parseInt(document.getElementById("creativityLevel").value);
+  const company = parseInt(document.getElementById("companyType").value);
+  const project = parseInt(document.getElementById("projectSize").value);
+  const dream = parseInt(document.getElementById("dreamWork").value);
   //hideResults();
 
   const output = checkLanguage(difficulty, creativity, company, project, dream);
-  quizResult(output);
+  quizResult(results);
 }

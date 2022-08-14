@@ -13,95 +13,49 @@
     <br>
     <form id="quiz-input">
       <p>How difficult of a language do you want to learn?</p>
-      <label for="difficulty">
-        <input id="difficulty" type="radio" name="difficulty" value="1" checked>
-        Very difficult.
-      </label>
+      <select id ="difficulty">
+        <option value="1">Very difficult.</option>
+        <option value="2">Medium difficulty.</option>
+        <option value="3">Least difficult.</option>
+      </select>
       <br>
-      <label for="difficulty">
-        <input id="difficulty" type="radio" name="difficulty" value="2">
-        Medium difficulty.
-      <br>
-      </label>
-      <br>
-      <label for="difficulty">
-        <input id="difficulty" type="radio" name="difficulty" value="2">
-        Easy to pick up.
-        <br>
-      </label>
       <br>
       <p>How much creativity would you like to be able to utilize on the job?</p>
-      <label for="creativity-level">
-        <input id="creativity-level" type="radio" name="creativity-level" value="1" checked>
-        Very creative.
-        <br>
-      </label>
-      <br>
-      <label for="creativity-level">
-        <input id="creativity-level" type="radio" name="creativity-level" value="2">
-        Medium creative.
-      <br>
-      </label>
-      <br>
-      <label for="creativity-level"></label>
-        <input id="creativity-level" type="radio" name="creativity-level" value="3">
-          No creativity involved.
-      </label>
+      <select id="creativityLevel">
+        <option value="1"> Very creative. </option>
+        <option value="2"> Mildly creative. </option>
+        <option value="3"> Least creative. </option>
+      </select>
       <br>
       <br>
       <p>What type of company would you like to work for?</p>
-      <label for="company-type">
-        <input id="company-type" type="radio" name="company-type" value="1" checked>
-        Cooporate
-      </label>
-      <br>
-      <label for="company-type">
-        <input id="company-type" type="radio" name="company-type" value="2">
-        Mid-level/ Small business.
-      </label>
-      <br>
-      <label for="company-type"></label>
-        <input id="company-type" type="radio" name="company-type" value="3">
-          Independt Contractor/ Self-Employed
-      </label>
+      <select id="companyType">
+        <option value="1">Cooporate. </option>
+        <option value="2">Mid-level or Small business.</option>
+        <option value="3">Independt Contractor/ Self-Employed.</option>
+      </slect>
       <br>
       <br>
-      <p>What project sizes would you like to take on?</p>
-      <label for="project-size">
-        <input id="project-size" type="radio" name="project-size" value="1" checked>
-        Making and maintaining large projects.
-      </label>
-      <br>
-      <label for="project-size">
-        <input id="project-size-input" type="radio" name="project-size" value="2">
-        Making medium projects, with limited maintiance needed.
-      </label>
-      <br>
-      <label for="project-size"></label>
-        <input id="project-size" type="radio" name="project-size" value="3">
-        Small projects, with varying amount of maintiance needed.
-      </label>
+      <p>What project sizes would you like to take on</p>
+      <select id="projectSize">
+        <option value="1">Making and maintaining large projects.</option>
+        <option value="1">Making medium projects, with limited maintiance needed.</option>
+        <option value="3">Small projects, with varying amount of maintiance needed.</option>
+      </select>
       <br>
       <br>
       <p>What company would excite you the most to work at?</p>
-      <label for="dream-work">
-        <input id="dream-work" type="radio" name="dream-work" value="1" checked>
-        NASA.
-      </label>
+      <select id="dreamWork">
+        <option value="1">NASA.</option>
+        <option value="1">Microsoft.</option>
+        <option value="3">Twitch.</option>
+      </select>
       <br>
-      <label for="dream-work">
-        <input id="dream-work" type="radio" name="dream-work" value="2">
-        Microsoft.
-      </label>
       <br>
-      <label for="dream-work-label"></label>
-        <input id="dream-work-input" type="radio" name="dream-work" value="3">
-        Twitch.
-      </label>
       <br>
       <button id="button" type="submit" class="btn">Submit your answers!</button>
     </form>
-    <div id = "output" class ="hidden">
+    <div id = "results" class ="hidden">
     <h2>Your suggested language is:</h2>
     <p id="output"></p>
     <p>To learn more about this language and other common languages <a href="languages.html">click here</a>.</p>
