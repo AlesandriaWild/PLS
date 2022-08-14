@@ -6,101 +6,105 @@
     <script src="js/script.js"></script>
   </head>
   <body class= "bg">
-  <div class="container bg-dark text-light Jumbotron jumbotron-fluid">
+  <div class="container">
     <h1>What programming language is a good fit for you?</h1>
     <p>Have you just started to learn how to code? Are you having trouble deciding which language you would like to learn? Look no further! This is a short quiz to help you decide which language would be a good fit for you.</p>
     <br>
     <br>
     <form id="quiz-input">
       <p>How difficult of a language do you want to learn?</p>
-      <label class="difficulty-label">
-        <input class="difficulty-input" type="radio" name="difficulty" value="1" checked>
+      <label for="difficulty">
+        <input id="difficulty" type="radio" name="difficulty" value="1" checked>
         Very difficult.
       </label>
       <br>
-      <label class="difficulty-label">
-        <input class="difficulty-input" type="radio" name="difficulty" value="2">
+      <label for="difficulty">
+        <input id="difficulty" type="radio" name="difficulty" value="2">
         Medium difficulty.
       <br>
       </label>
       <br>
-      <label class="difficulty-label">
-        <input class="difficulty-input" type="radio" name="difficulty" value="2">
+      <label for="difficulty">
+        <input id="difficulty" type="radio" name="difficulty" value="2">
         Easy to pick up.
         <br>
       </label>
       <br>
       <p>How much creativity would you like to be able to utilize on the job?</p>
-      <label class="creativity-level-label">
-        <input class="creativity-level-input" type="radio" name="creativity-level" value="1" checked>
+      <label for="creativity-level">
+        <input id="creativity-level" type="radio" name="creativity-level" value="1" checked>
         Very creative.
         <br>
       </label>
       <br>
-      <label class="creativity-level-label">
-        <input class="creativity-level-input" type="radio" name="creativity-level" value="2">
+      <label for="creativity-level">
+        <input id="creativity-level" type="radio" name="creativity-level" value="2">
         Medium creative.
       <br>
       </label>
       <br>
-      <label class="creativity-level-label"></label>
-        <input class="creativity-level-input" type="radio" name="creativity-level" value="3">
+      <label for="creativity-level"></label>
+        <input id="creativity-level" type="radio" name="creativity-level" value="3">
           No creativity involved.
       </label>
       <br>
       <br>
       <p>What type of company would you like to work for?</p>
-      <label class="company-type-label">
-        <input class="company-type-input" type="radio" name="company-type" value="1" checked>
+      <label for="company-type">
+        <input id="company-type" type="radio" name="company-type" value="1" checked>
         Cooporate
       </label>
       <br>
-      <label class="company-type-label">
-        <input class="company-type-input" type="radio" name="company-type" value="2">
+      <label for="company-type">
+        <input id="company-type" type="radio" name="company-type" value="2">
         Mid-level/ Small business.
       </label>
       <br>
-      <label class="company-type-label"></label>
-        <input class="company-type-input" type="radio" name="company-type" value="3">
+      <label for="company-type"></label>
+        <input id="company-type" type="radio" name="company-type" value="3">
           Independt Contractor/ Self-Employed
       </label>
       <br>
       <br>
       <p>What project sizes would you like to take on?</p>
-      <label class="project-size-label">
-        <input class="project-size-input" type="radio" name="project-size" value="1" checked>
+      <label for="project-size">
+        <input id="project-size" type="radio" name="project-size" value="1" checked>
         Making and maintaining large projects.
       </label>
       <br>
-      <label class="-label">
-        <input class="project-size-input" type="radio" name="project-size" value="2">
+      <label for="project-size">
+        <input id="project-size-input" type="radio" name="project-size" value="2">
         Making medium projects, with limited maintiance needed.
       </label>
       <br>
-      <label class="project-size-label"></label>
-        <input class="project-size-input" type="radio" name="project-size" value="3">
+      <label for="project-size"></label>
+        <input id="project-size" type="radio" name="project-size" value="3">
         Small projects, with varying amount of maintiance needed.
       </label>
       <br>
       <br>
-      <p></p>
-      <label class="-label">
-        <input class="-input" type="radio" name="" value="1" checked>
-        
+      <p>What company would excite you the most to work at?</p>
+      <label for="dream-work">
+        <input id="dream-work" type="radio" name="dream-work" value="1" checked>
+        NASA.
       </label>
       <br>
-      <label class="-label">
-        <input class="-input" type="radio" name="" value="2">
-        
+      <label for="dream-work">
+        <input id="dream-work" type="radio" name="dream-work" value="2">
+        Microsoft.
       </label>
       <br>
-      <label class="-label"></label>
-        <input class="-input" type="radio" name="" value="3">
-          
+      <label for="dream-work-label"></label>
+        <input id="dream-work-input" type="radio" name="dream-work" value="3">
+        Twitch.
       </label>
       <br>
+      <button id="button" type="submit" class="btn">Submit your answers!</button>
     </form>
 
+    <h2>Your suggested language is:</h2>
+    <p id="output"></p>
+    <p>To learn more about this language and other common languages <a href="languages.html">click here</a>.</p>
     </div>
   </body>
 </html>
